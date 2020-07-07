@@ -10,6 +10,9 @@ cur.execute(query)
 conn.commit()
 
 class CreditCard:
+    
+# the card length is 16 digits and pin length is 4 digits
+# the card number has to be in accordance with the Luhn's algorithm, see wikipedia: https://en.wikipedia.org/wiki/Luhn_algorithm
     def __init__(self):
         random.seed()
         self.balance = 0
